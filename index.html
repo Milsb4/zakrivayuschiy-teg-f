@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light dark">
+    <title>Закрывающий тег</title>
+    <link rel="icon" href="./svg/favivon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/mobile-icon.png" />
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/animations.css" />
+    <link rel="stylesheet" href="./styles/themes.css" />
+    <script src="./scripts/set-theme.js"></script>
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title">&lt;/HTML&gt;</h1>
+      <p class="header__paragraph">закрывающий тег</p>
+      <nav class="theme-menu header__theme-menu">
+        <ul class="theme-menu__list">
+          <li class="theme-menu__item">
+            <button type="button" data-theme="dark" class="theme-menu__button">
+              Темно
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button
+              type="button"
+              data-theme="auto"
+              disabled
+              class="theme-menu__button"
+            >
+              Авто
+            </button>
+          </li>
+          <li class="theme-menu__item">
+            <button type="button" data-theme="light" class="theme-menu__button">
+              Светло
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="card">
+        <h2 class="card__title">Фритрек и нулевой спринт: Подготовка к работе</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image" 
+          loading="lazy"
+          src="./images/stupor.webp"
+          alt="сидящий младенец в недоумении"
+          >
+          <p class="text-label">
+            &lt;/HMMM&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            Это было самое начало пути. На этом этапе важно было проникнуться основами
+            и настроиться на учёбу. И, возможно, подумать, как новые знания могут
+            повлиять на ваше будущее.
+          </p>
+          <p class="text-container__paragraph">
+            Все такое непонятное, но интересно в этом разбираться.
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g id="heart" class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">1 спринт: Я — чистый лист</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image invert" 
+          loading="lazy"
+          src="./images/concentration.webp"
+          alt="очень напряженный мужчина"
+          >
+          <p class="text-label">
+            &lt;CODE&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            На первых этапах мы работали со страхами и сомнениями,
+            которые часто испытывают новички. Один из них — страх
+            перед чистым листом. Это, конечно же, намного сложнее, чем
+            боязнь куска бумаги. Часто за этим ощущением скрываются более
+            глубокие вопросы: с чего начать? а вдруг будет слишком сложно? что,
+            если я не справлюсь?
+          </p>
+          <p class="text-container__paragraph">
+            Безумно интересно, хочется изучить все и сразу.
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">1 спринт: А если не получится?</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image grayscale" 
+          loading="lazy"
+          src="./images/sad.webp"
+          alt="грустный мужчина в разных локациях"
+          >
+          <p class="text-label">
+            &lt;sad&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            Первый проект — позади! Но это всё ещё самое начало пути.
+            Радость могла быстро померкнуть и смениться ожиданием провала.
+            Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+          </p>
+          <p class="text-container__paragraph">
+            И правда не получилось... С первого раза. Мысли о том, что это не мое уже посетили
+            меня. Но тут я смог собраться и все получилось. 
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image contrast" 
+          loading="lazy"
+          src="./images/god.webp"
+          alt="карикатур: бог с пиццей"
+          >
+          <p class="text-label">
+            &lt;VЁRSTKA&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            На этом этапе вы уже достаточно разбирались в основах вёрстки,
+            чтобы понять, как много ещё впереди. Вы могли попытаться погнаться
+            за идеалом и понять, что он недостижим. А, может, вы вовсе и не подвержены
+            перфекционизму и вместо того, чтобы сделать идеально, старались просто сделать.
+          </p>
+          <p class="text-container__paragraph">
+            Уже показалось, что я бог верстки и могу делать все идеально, но как я ошибался.
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image blur" 
+          loading="lazy"
+          src="./images/yes.webp"
+          alt="радостный боксер с поясом"
+          >
+          <p class="text-label">
+            care
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали,
+            что одни против целого мира). Вас окружали одногруппники, команда
+            сопровождения и просто близкие люди, которым можно пожаловаться, если
+            очередной макет просто так не поддавался. Осваивать что-то новое легче,
+            когда рядом есть единомышленники, не правда ли?
+          </p>
+          <p class="text-container__paragraph">
+            Я радовался, когда у меня что-то получилось, и всегда хотел поделится результотом с кем-нибудь. 
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">3 спринт: Обходные стратегии</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image sepia" 
+          loading="lazy"
+          src="./images/pain.webp"
+          alt="грустный мужчина плачет"
+          >
+          <p class="text-label">
+            &lt;paint&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            На этом курсе вы постоянно решали разные задачи. В какой-то момент
+            вам могло показаться, что решения просто иссякли. Значит, пришло
+            время посмотреть на задачу под другим углом.
+          </p>
+          <p class="text-container__paragraph">
+            Приходилось все переделывать за собой, но мне нравилось улучшать свой код.
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image hue-rotate" 
+          loading="lazy"
+          src="./images/misunderstanding.webp"
+          alt="недовольный футболист Динамо"
+          >
+          <p class="text-label">
+            &lt;lifes-style: none;&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься.
+            Вроде и проектную пора сдавать, и задачи хочется порешать, и в теории получше
+            разобраться, и жизнь не забыть пожить. В такие моменты очень нужна
+            концентрация. Вспомните, откуда вы её черпали.
+          </p>
+          <p class="text-container__paragraph">
+            ^ Лучшее описание. Столько всего сделать бы можно, а все успеть не можешь. Вот бы в часах еще сутки добавить.
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+      <section class="card">
+        <h2 class="card__title">«Сейчас я здесь»</h2>
+        <div class="card__image-container">
+          <img
+          class="card__image saturate" 
+          loading="lazy"
+          src="./images/pesel.webp"
+          alt="Собачка, веляющая хвостиком"
+          >
+          <p class="text-label">
+            &lt;allIsFine&gt;
+          </p>
+        </div>
+        <div class="text-container">
+          <p class="text-container__paragraph">
+            Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+            Во-первых, впереди ещё много материала про «красотищу». Во-вторых,
+            с окончанием курса учёба не заканчивается. Вёрстка — это целый мир.
+            И этот мир постоянно меняется. Познать его полностью не получится,
+            но это тот случай, когда важен сам процесс познания. Ведь часто путь
+             — и есть результат.
+          </p>
+          <p class="text-container__paragraph">
+            Мне нравится учиться и открывать что-то новое для себя. Впереди
+            еще столько всего и мне не терпеться по-скорее начать.
+          </p>
+        </div>
+
+        <!--Кнопки лайк-->
+
+        <div class="card__button-group">
+          <button class="card__icon-button">
+            <svg class="like-icon" width="39" height="36" viewBox="4 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+              <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+              <path class="sparks" d="M36 13H43V16H40V13ZM31 27H34V30H31V27ZM22 33H25V36H22V33ZM13 27H16V30H13V27ZM28
+                0H31V3H28V0ZM37 3H40V6H37V3ZM7 3H10V6H7V3ZM16 0H19V3H16V0ZM4 13H7V16H4V13Z" fill="var(--sparks-color)"/>
+                
+                <!--Группа -->
+
+                <g class="heart">
+                  <path class="contour" d="M12 6H13V9H16V6ZM19 6H16V9H19V6ZM13 9H10V12H13V9ZM13 12H10V15H13V12ZM13 15H10V18H13V15ZM22
+                6H19V9H22V6ZM16 18H13V21H16V18ZM19 21H16V24H19V21ZM22 24H19V27H22V24ZM31 6H34V9H31V6ZM28
+                6H31V9H28V6ZM34 9H37V12H34V9ZM34 12H37V15H34V12ZM34 15H37V18H34V15ZM25 6H28V9H25V6ZM31
+                18H34V21H31V18ZM28 21H31V24H28V21ZM25 24H28V27H25V24ZM25 27H22V30H25V27ZM25 9H22V12H25V9Z" fill="var(--contour-color)"/>
+              <path class="main-body" d="M12 9H13V12H16V9ZM19 12H16V15H19V12ZM22 9H19V12H22V9ZM16 15H13V18H16V15ZM19
+                15H16V18H19V15ZM19 18H16V21H19V18ZM22 12H19V15H22V12ZM22 21H19V24H22V21ZM22 18H19V21H22V18ZM31
+                9H34V12H31V9ZM28 9H31V12H28V9ZM31 12H34V15H31V12ZM28 12H31V15H28V12ZM25 9H28V12H25V9ZM31
+                15H34V18H31V15ZM28 15H31V18H28V15ZM28 18H31V21H28V18ZM25 12H28V15H25V12ZM25 21H28V24H25V21ZM25
+                18H28V21H25V18ZM25 21H22V24H25V21ZM25 24H22V27H25V24Z" fill="none"/>
+              <path class="core" d="M18 15H19V18H22V15ZM25 15H28V18H25V15ZM25 15H22V18H25V15ZM25 12H22V15H25V12ZM25
+                18H22V21H25V18Z" fill="none"/>
+                </g>
+              </svg>
+          </button>  
+          <button class="card__like-button">
+            <span class="button__text">
+              Like
+            </span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <button class="footer-button"
+      type="button" 
+      onclick="window['dialog-id'].showModal()" 
+      aria-controls="dialog-id">
+        <svg class="footer-button__image" width="40" height="40" viewBox="0 0 40 40">
+          <use href="#floppy"/>
+        </svg>
+        <span class="button__text">Сохранить на память</span>
+      </button>
+
+      <!--Диалог окно-->
+
+    <dialog
+    class="dialog"
+    id="dialog-id">
+      <svg class="dialog-button__image" width="40" height="40" viewBox="0 0 40 40">
+        <use href="#floppy"/>
+      </svg>
+      <h2 class="dialog__title">
+        Вставтьте дискету, чтобы продолжить
+      </h2>
+      <button class="dialog__button"
+      type="button" 
+      onclick="window['dialog-id'].close()">
+        ок
+      </button>
+    </dialog>  
+    </footer>
+
+    <!-- SVG картинкa-->
+    
+      <svg xmlns="http://www.w3.org/2000/svg" width="39" height="39" fill="none">
+        <symbol id="floppy">
+          <path fill="currentColor" d="M.5.5h3v3h-3zM.5 3.5h3v3h-3zM.5 6.5h3v3h-3zM.5 9.5h3v3h-3zM.5 12.5h3v3h-3zM.5 15.5h3v3h-3zM.5 18.5h3v3h-3zM.5 21.5h3v3h-3zM.5 24.5h3v3h-3zM.5 27.5h3v3h-3zM.5 30.5h3v3h-3zM.5 33.5h3v3h-3zM.5 36.5h3v3h-3zM33.5.5v3h-3v-3zM30.5.5v3h-3v-3zM27.5.5v3h-3v-3zM24.5.5v3h-3v-3zM21.5.5v3h-3v-3zM18.5.5v3h-3v-3zM15.5.5v3h-3v-3zM12.5.5v3h-3v-3zM9.5.5v3h-3v-3zM6.5.5v3h-3v-3zM36.5 3.5v3h-3v-3zM9.5 6.5v3h-3v-3zM9.5 3.5v3h-3v-3zM9.5 9.5v3h-3v-3zM30.5 6.5v3h-3v-3zM30.5 3.5v3h-3v-3zM30.5 9.5v3h-3v-3zM24.5 6.5v3h-3v-3zM24.5 3.5v3h-3v-3zM24.5 9.5v3h-3v-3zM30.5 12.5v3h-3v-3zM27.5 12.5v3h-3v-3zM24.5 12.5v3h-3v-3zM21.5 12.5v3h-3v-3zM18.5 12.5v3h-3v-3zM15.5 12.5v3h-3v-3zM12.5 12.5v3h-3v-3zM9.5 12.5v3h-3v-3zM33.5 21.5v3h-3v-3zM30.5 21.5v3h-3v-3zM27.5 21.5v3h-3v-3zM24.5 21.5v3h-3v-3zM21.5 21.5v3h-3v-3zM18.5 21.5v3h-3v-3zM15.5 21.5v3h-3v-3zM12.5 21.5v3h-3v-3zM9.5 21.5v3h-3v-3zM33.5 24.5v3h-3v-3zM9.5 24.5v3h-3v-3zM33.5 27.5v3h-3v-3zM9.5 27.5v3h-3v-3zM33.5 30.5v3h-3v-3zM9.5 30.5v3h-3v-3zM9.5 33.5v3h-3v-3zM33.5 33.5v3h-3v-3zM36.5 36.5v3h-3v-3zM33.5 36.5v3h-3v-3zM30.5 36.5v3h-3v-3zM27.5 36.5v3h-3v-3zM24.5 36.5v3h-3v-3zM21.5 36.5v3h-3v-3zM18.5 36.5v3h-3v-3zM15.5 36.5v3h-3v-3zM12.5 36.5v3h-3v-3zM9.5 36.5v3h-3v-3zM6.5 36.5v3h-3v-3zM39.5 39.5h-3v-3h3zM39.5 36.5h-3v-3h3zM39.5 33.5h-3v-3h3zM39.5 30.5h-3v-3h3zM39.5 27.5h-3v-3h3zM39.5 24.5h-3v-3h3zM39.5 21.5h-3v-3h3zM39.5 18.5h-3v-3h3zM39.5 15.5h-3v-3h3zM39.5 12.5h-3v-3h3zM39.5 9.5h-3v-3h3z"/>
+        </symbol>
+      </svg>
+    <script src="./scripts/like.js"></script>
+  </body>
+</html>
+
+
+  

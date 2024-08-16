@@ -2,12 +2,13 @@
 
 :root{
     --Inter-family: 'Inter-Variable', sans-serif;
-    --PS2P-family: 'PressStart2P', sans-serif;
+    --PS2P-family: 'PressStart2P', fantasy;
     --bg-color: #fff;
     --main-color: #000;
     --gradient: repeating-linear-gradient(
         to right, #d3d3d3 0 2px, transparent 2px 4px),
         repeating-linear-gradient(#d3d3d3 0 2px, transparent 2px 4px),
         linear-gradient(#e7e7e7, #1a1a1a);
-     --sparks-color: #ff0000;   
+     --sparks-color: #ff0000;
+     --heart-color: #ff0000;  
 }

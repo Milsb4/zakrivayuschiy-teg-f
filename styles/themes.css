@@ -13,9 +13,9 @@
     to right, #000 0 2px, transparent 2px 4px),
     repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
     linear-gradient(#007f0c, #004306);
-  --text-stroke-color: #007f0c;
-  --button-hover-color: #007f0c;
-  --contour-color: #007f0c;
+  --text-stroke-color: #00CC14;
+  --button-hover-color: #00CC14;
+  --contour-color: #00CC14;
 }
 
 :root.theme-light{
@@ -58,8 +58,8 @@
           to right, #000 0 2px, transparent 2px 4px),
           repeating-linear-gradient(#000 0 2px, transparent 2px 4px),
           linear-gradient(#007f0c, #004306);
-        --text-stroke-color: #007f0c;
-        --button-hover-color: #007f0c;
-        --contour-color: #007f0c;
+        --text-stroke-color: #00CC14;
+        --button-hover-color: #00CC14;
+        --contour-color: #00CC14;
     }
     }

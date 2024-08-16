@@ -1,17 +1,3 @@
-/* Опишите в этом файле все keyframes для проекта и стили анимаций иконки Like.
-
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
-✦ theme-dark — класс тёмной темы
-✦ theme-light — класс светлой темы
-✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
-
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-*/
 
 @keyframes move{
    from {
@@ -41,4 +27,76 @@
    to {
      opacity: 1;
    }
+}
+
+.theme-menu__button:hover{
+  transition: transform 0.3s, color 0.3s, ease;
+}
+
+.theme-menu__button::after{
+  transition: transform 0.3s ease;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.theme-menu__button:disabled::before{
+  animation: move 0.5s ease-in-out infinite alternate;
+}
+
+.button::before{
+  transition: transform 0.5s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
+.card__icon-button:focus-visible{
+  transition: 0.3s ease;
+}
+
+.core{
+  transition: fill 0.3s 0.03s linear;
+}
+
+.main-body{
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .core{
+  transition: fill 0.3s linear;
+}
+
+.like-icon:hover .main-body{
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon:active .core{
+  transition: fill 0.3s linear;
+}
+
+.like-icon:active .main-body{
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .core{
+  transition: fill 0.3s linear;
+}
+
+.like-icon.is-liked .main-body{
+  transition: fill 0.3s 0.05s linear;
+}
+
+.like-icon.is-liked .contour{
+  transition: fill 0.3s 0.06s linear;
+}
+
+.like-icon.is-liked .sparks{
+  animation: sparks 0.3s 0.3s ease-in alternate;
+}
+
+.like-icon.is-liked{
+  animation: scale 0.3s 0.1s ease-in alternate;
+}
+
+.dialog{
+  transition: opacity 0.3s ease-in-out;
 }

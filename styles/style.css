@@ -29,9 +29,9 @@
 
 .header__logo{
   text-decoration: none;
- font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
- align-self: end;
- margin-block-start: 136px;
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  align-self: end;
+  margin-block-start: 136px;
 }
 
 .header__title{
@@ -49,9 +49,9 @@
 }
 
 .theme-menu__list{
- display: flex;
- flex-direction: column;
- gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .theme-menu__button{
@@ -215,7 +215,7 @@
 .card__button-group{
   justify-self: end;
   display: flex;
-  gap: 6px;
+  gap: 9px;
   margin-block-end: 26px;
 }
 
@@ -234,7 +234,7 @@
   position: absolute;
   background-color: var(--main-color);
   inline-size: inherit;
-  block-size: inherit;
+  block-size: 100%;
   inset-inline-start: -2px;
   inset-block-start: 0;
 }
@@ -329,7 +329,6 @@
 }
 
 .memory-button{
-  margin-block-start: 50px;
   align-self: center;
   inline-size: 335px;
   block-size: 55px;
@@ -394,7 +393,7 @@ dialog::backdrop {
 }
 
 .dialog__button:hover::before{
-  transform: scaleX(0);
+  inset: 0;
 }
 
 @media (width <= 375px){
